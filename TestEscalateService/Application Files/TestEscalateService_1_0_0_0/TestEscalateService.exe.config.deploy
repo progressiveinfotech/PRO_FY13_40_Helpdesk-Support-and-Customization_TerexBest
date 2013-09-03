@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="dataConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSettings, Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </configSections>
+  <connectionStrings>
+    <clear />
+    <add name="CSM_DB" connectionString="Data Source=CSM-DEV\SQL2008;Initial Catalog=gpi_best;Persist Security Info=True;User ID=sa;Password=rimc@123;User Instance=False" providerName="System.Data.SqlClient" />
+    <!--<add name="CSM_DB" connectionString="Data Source=HO-SER-HELPDESK\HELPDESK;Initial Catalog=gpi_best;Persist Security Info=True;User ID=sa;Password=Welc0me@123;User Instance=False" providerName="System.Data.SqlClient" />-->
+  </connectionStrings>
+  <appSettings>
+    <add key="ProviderName" value="CSM_DB" />
+    <add key="SMTP" value="mail.progressive.in" />
+    <add key="from" value="lalit.joshi@progressive.in" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+    <!--<add key="ProviderName" value="CSM_DB" />
+      <add key="SMTP" value="10.250.1.149" />
+      <add key="from" value="dcoperation-gpi@Modi.com" />
+      <add key="ClientSettingsProvider.ServiceUri" value="" />-->
+  </appSettings>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>

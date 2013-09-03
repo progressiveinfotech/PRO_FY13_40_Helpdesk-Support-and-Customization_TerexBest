@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="TestEscalateService.exe" version="1.0.0.0" publicKeyToken="52644a1095d7d6a2" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TestEscalateService" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TestEscalateService.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Practices.EnterpriseLibrary.Common.dll" size="161192">
+      <assemblyIdentity name="Microsoft.Practices.EnterpriseLibrary.Common" version="3.1.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>8mDKGYawe0kI/oN4ObxJApRRKGE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Practices.EnterpriseLibrary.Data.dll" size="91560">
+      <assemblyIdentity name="Microsoft.Practices.EnterpriseLibrary.Data" version="3.1.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>wtGln3CW7VemJ23ZPZA8VemeK6U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Practices.ObjectBuilder.dll" size="64352">
+      <assemblyIdentity name="Microsoft.Practices.ObjectBuilder" version="1.0.51206.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>SQFaAQruTAcQ46MIbAXN9a/AVa0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TestEscalateService.exe" size="133632">
+      <assemblyIdentity name="TestEscalateService" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>NW365Y6XTXRfvdAVB/ZxXyZ2gV4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="TestEscalateService.exe.config" size="2115">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>eCj+g+2o69gN/5nPe5VWF9oWhqE=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CSM-DEV\Administrator" issuerKeyHash="7dfe50038fcdd3862e01c54b054450b4cc161e4a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>/vyjBOug5eHoI3ueYbAmN+qhqKY=</DigestValue></Reference></SignedInfo><SignatureValue>XKrIKqybeW8C7ShT0pLCDeWiVxLYMHB5+jzuQm2cOMeeyA8EqBviErYa39Zu1aIHqlZKs0slchu0yJHtOekMPyxyX02MNSd24z/bFS1JmtMcIvthN9aeBkvBPA4WYU5/4AQAXmyitZoBZjWVseuOvt1Vb4/Ldi8Lx8gvX9UVEek=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wfXJvmojv8acw+9lH+6N9NuZWRD4Eje6JVOc8wZuAMwAPF4lQrSDkJjRsJhLVLEg4fn0VqGVB0prafR2FnbXb3vy0xYDDEtz4qDG/eIO+dWz1+nSoP/6abPZSYybQqh8ibnBuEOdGOjbKTTqVbD7qsVOewsMMVu0bzlrXlEf8mc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a6a8a1ea3726b0619e7b23e8e1e5a0eb04a3fcfe" Description="" Url=""><as:assemblyIdentity name="TestEscalateService.exe" version="1.0.0.0" publicKeyToken="52644a1095d7d6a2" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CSM-DEV\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Irjo8FBH0ws/ReP41WxSyZ9bSdw=</DigestValue></Reference></SignedInfo><SignatureValue>XHk2pWgJAAIIooOKJC8SOTyanF/JdtVRoWlfpX4tYFh2Fp/zi8j1r9EfIqw2SKyNF3RauClY7XcG+r3kyMGUaqlXphNqLgcVdm/lUjUIdNvw/1L63Uliejb6YWLoegKowtXPSzgUi4bhGtjdDyL8YovdNjtzddCj2yj967I+fYU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wfXJvmojv8acw+9lH+6N9NuZWRD4Eje6JVOc8wZuAMwAPF4lQrSDkJjRsJhLVLEg4fn0VqGVB0prafR2FnbXb3vy0xYDDEtz4qDG/eIO+dWz1+nSoP/6abPZSYybQqh8ibnBuEOdGOjbKTTqVbD7qsVOewsMMVu0bzlrXlEf8mc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAVKgAwIBAgIQSs6KQOyh94xG1fKwiKpZ0TAJBgUrDgMCHQUAMDUxMzAxBgNVBAMeKgBDAFMATQAtAEQARQBWAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcjAeFw0xMjA4MTcwOTE4NTlaFw0xMzA4MTcxNTE4NTlaMDUxMzAxBgNVBAMeKgBDAFMATQAtAEQARQBWAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwfXJvmojv8acw+9lH+6N9NuZWRD4Eje6JVOc8wZuAMwAPF4lQrSDkJjRsJhLVLEg4fn0VqGVB0prafR2FnbXb3vy0xYDDEtz4qDG/eIO+dWz1+nSoP/6abPZSYybQqh8ibnBuEOdGOjbKTTqVbD7qsVOewsMMVu0bzlrXlEf8mcCAwEAATAJBgUrDgMCHQUAA4GBAJy7PdrFrDJcT+skeYj2jZglekGp++KphmRJxyhoC6eY0fJaErI9Bq1rMbd6O/GWxlD8s7jW1imH7xQhvcmjhZnBWARmiUw4eUNe2nX8koAuvpQzl6ioz5hGr5nLrqXdTgofP+a6cgaXcsIRQ4TxBo6vDtC+wXlEIye8jahGWSnk</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
